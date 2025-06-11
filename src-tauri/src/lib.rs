@@ -1,4 +1,13 @@
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
+
+// use std::fs;
+
+// #[tauri::command]
+// fn read_default_model() -> String {
+//     let content = fs::read_to_string("models/default.stl").expect("Не удалось прочитать файл");
+//     content
+// }
+
 #[tauri::command]
 fn greet(name: &str) -> String {
     format!("Hello, {}! You've been greeted from Rust!", name)
@@ -11,6 +20,7 @@ pub fn run() {
         .plugin(tauri_plugin_dialog::init())
         .plugin(tauri_plugin_opener::init())
         .invoke_handler(tauri::generate_handler![greet])
+//         .invoke_handler(tauri::generate_handler![read_default_model])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

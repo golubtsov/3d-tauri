@@ -8,6 +8,7 @@
     "npm:@tauri-apps/plugin-fs@2.3": "2.3.0",
     "npm:@tauri-apps/plugin-opener@2": "2.2.7",
     "npm:p5@^2.0.3": "2.0.3",
+    "npm:prettier@^3.5.3": "3.5.3",
     "npm:tailwindcss@^4.1.8": "4.1.8",
     "npm:typescript@~5.6.2": "5.6.3",
     "npm:vite@^6.0.3": "6.3.5_picomatch@4.0.2"
@@ -786,6 +787,10 @@
         "source-map-js"
       ]
     },
+    "prettier@3.5.3": {
+      "integrity": "sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==",
+      "bin": true
+    },
     "rollup@4.42.0": {
       "integrity": "sha512-LW+Vse3BJPyGJGAJt1j8pWDKPd73QM8cRXYK1IxOBgL2AGLu7Xd2YOW0M2sLUBCkF5MshXXtMApyEAEzMVMsnw==",
       "dependencies": [
@@ -885,6 +890,7 @@
         "npm:@tauri-apps/plugin-fs@2.3",
         "npm:@tauri-apps/plugin-opener@2",
         "npm:p5@^2.0.3",
+        "npm:prettier@^3.5.3",
         "npm:tailwindcss@^4.1.8",
         "npm:typescript@~5.6.2",
         "npm:vite@^6.0.3"
